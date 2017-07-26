@@ -66,7 +66,6 @@ It is displayed after the Shopware checkout process is finished and contains the
         padding-right: 0;
     }
 
-
     .table--aggregation {
         display: none;
     }
@@ -101,7 +100,10 @@ It is displayed after the Shopware checkout process is finished and contains the
 
 @media screen and (min-width: @tabletViewportWidth) {
 
-    .teaser--btn-print { text-align: left; width: auto; }
+    .teaser--btn-print {
+        text-align: left;
+        width: auto;
+    }
 
     .is--act-finish .content-main {
         .unitize(margin-top, 40);
@@ -190,7 +192,9 @@ It is displayed after the Shopware checkout process is finished and contains the
         .table--tr {
             padding: 0;
 
-            &:last-child { border: 0 none; }
+            &:last-child {
+                border: 0 none;
+            }
 
             .column--quantity {
                 .unitize(line-height, 42);
@@ -289,7 +293,7 @@ It is displayed after the Shopware checkout process is finished and contains the
         width: auto;
         height: auto;
         overflow: auto;
-        background: #fff;
+        background: #FFFFFF;
     }
 
     .container {

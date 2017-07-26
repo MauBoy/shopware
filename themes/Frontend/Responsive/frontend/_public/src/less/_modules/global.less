@@ -35,7 +35,7 @@ Add a `is--` class to an element to easily change the properties.
     .box-sizing();
 }
 
-    // Fix the body for off-canvas handling
+// Fix the body for off-canvas handling
 html {
     width: 100%;
     height: 100%;
@@ -60,7 +60,7 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-    // All images should be responsive by default
+// All images should be responsive by default
 img {
     display: block;
     max-width: 100%;
@@ -78,13 +78,17 @@ ul {
     padding: 0;
 }
 
-    // Star rating
+// Star rating
 .product--rating {
-    i[class^=icon] { color: @rating-star-color; }
-    i.icon--star-empty { color: @border-color; }
+    i[class^=icon] {
+        color: @rating-star-color;
+    }
+    i.icon--star-empty {
+        color: @border-color;
+    }
 }
 
-    // Font
+// Font
 h1, h2, h3, h4, h5, h6 {
     .unitize(line-height, 26);
     .unitize-margin(28, 0, 10, 0);
@@ -135,41 +139,111 @@ blockquote {
     margin: 0;
 }
 
-    // Hide ajax loader by default
-.ajax-loader { display: none }
+// Hide ajax loader by default
+.ajax-loader {
+    display: none
+}
 
-    // Global Modifier
-.is--rounded { .border-radius(); }
+// Global Modifier
+.is--rounded {
+    .border-radius();
+}
 
-.is--block { display: block !important; }
-.is--inline { display: inline !important; }
-.is--inline-block { display: inline-block !important; }
-.is--hidden { display: none !important; }
-.is--invisible { visibility: hidden !important; }
+.is--block {
+    display: block !important;
+}
 
-.is--align-left { text-align: left !important; }
-.is--align-right { text-align: right !important; }
-.is--align-center { text-align: center !important; }
-.is--underline { text-decoration: underline !important; }
-.is--line-through { text-decoration: line-through !important; }
-.is--uppercase { text-transform: uppercase !important; }
-.is--strong { font-weight: 600 !important; }
-.is--bold { font-weight: bold !important; }
-.is--italic { font-style: italic; }
-.is--nowrap { white-space: nowrap !important; }
+.is--inline {
+    display: inline !important;
+}
 
-.is--dark { color: @text-color-dark !important; }
-.is--light { color: darken(@gray-dark, 20%) !important; }
-.is--soft { color: @gray-dark !important; }
+.is--inline-block {
+    display: inline-block !important;
+}
 
-.is--fluid { width: 100% !important; }
+.is--hidden {
+    display: none !important;
+}
 
-.left { float: left; }
-.right { float: right; }
+.is--invisible {
+    visibility: hidden !important;
+}
 
-::-moz-placeholder { color: @input-placeholder-color; }
-::-webkit-input-placeholder { color: @input-placeholder-color; }
-:-ms-input-placeholder { color: @input-placeholder-color; }
+.is--align-left {
+    text-align: left !important;
+}
+
+.is--align-right {
+    text-align: right !important;
+}
+
+.is--align-center {
+    text-align: center !important;
+}
+
+.is--underline {
+    text-decoration: underline !important;
+}
+
+.is--line-through {
+    text-decoration: line-through !important;
+}
+
+.is--uppercase {
+    text-transform: uppercase !important;
+}
+
+.is--strong {
+    font-weight: 600 !important;
+}
+
+.is--bold {
+    font-weight: bold !important;
+}
+
+.is--italic {
+    font-style: italic;
+}
+
+.is--nowrap {
+    white-space: nowrap !important;
+}
+
+.is--dark {
+    color: @text-color-dark !important;
+}
+
+.is--light {
+    color: darken(@gray-dark, 20%) !important;
+}
+
+.is--soft {
+    color: @gray-dark !important;
+}
+
+.is--fluid {
+    width: 100% !important;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+::-moz-placeholder {
+    color: @input-placeholder-color;
+}
+
+::-webkit-input-placeholder {
+    color: @input-placeholder-color;
+}
+
+:-ms-input-placeholder {
+    color: @input-placeholder-color;
+}
 
 .page-wrap {
     .unitize-min-width(320, 16);
@@ -177,17 +251,17 @@ blockquote {
 
 .content-main,
 .content--wrapper {
-	.clearfix();
+    .clearfix();
 }
 
 .content-main--inner {
-	.unitize-padding(0, 10, 16);
-	.clearfix();
+    .unitize-padding(0, 10, 16);
+    .clearfix();
 }
 
 .content {
-	width: 100%;
-	float: left;
+    width: 100%;
+    float: left;
 }
 
 @media screen and(min-width: @tabletViewportWidth) {
@@ -208,7 +282,7 @@ blockquote {
         .unitize(margin-bottom, 45);
         .unitize(min-height, 700);
     }
-    
+
     .content-main--inner {
         .unitize-padding(0, 50, 50, 50);
     }

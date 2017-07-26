@@ -59,7 +59,8 @@ Shopware provides 3 product box types:<br/>
         height: 100%;
         margin: 0;
         position: absolute;
-        top: 0; left: 0;
+        top: 0;
+        left: 0;
 
         & when (ispercentage(@imageWidth)) {
             width: @imageWidth;
@@ -82,7 +83,7 @@ Shopware provides 3 product box types:<br/>
     }
 }
 
-    //  Special mixin for positioning the product image at the top of the product box
+//  Special mixin for positioning the product image at the top of the product box
 .image--top(@imageHeight: 180) {
     .product--image {
         .unitize-margin(0, 0, 5, 0);
@@ -102,7 +103,7 @@ Shopware provides 3 product box types:<br/>
     }
 }
 
-    //  Product box
+//  Product box
 .product--box {
     .clearfix();
     display: block;
@@ -132,8 +133,10 @@ Shopware provides 3 product box types:<br/>
 
             img {
                 position: absolute;
-                top: 0; bottom: 0;
-                left: 0; right: 0;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
                 margin: auto;
                 display: inline-block;
                 vertical-align: middle;
@@ -274,21 +277,21 @@ Shopware provides 3 product box types:<br/>
         }
     }
 
-/*
-Product Badges
-==========================================
-Creates a corner product badge on a product-box.
-```
-<div class="product--box">
-    <div class="product--badges">
-        <div class="product--badge badge--discount">
-            <i class="icon--percent2"></i>
+    /*
+    Product Badges
+    ==========================================
+    Creates a corner product badge on a product-box.
+    ```
+    <div class="product--box">
+        <div class="product--badges">
+            <div class="product--badge badge--discount">
+                <i class="icon--percent2"></i>
+            </div>
         </div>
     </div>
-</div>
 
-```
-*/
+    ```
+    */
     .product--badges {
         .unitize(top, 20);
         .unitize(left, -1);
@@ -361,7 +364,8 @@ Creates a corner product badge on a product-box.
     .product--price {
         .unitize(line-height, 20);
         position: absolute;
-        bottom: 0; left: 0;
+        bottom: 0;
+        left: 0;
         height: auto;
 
         .price--default {
@@ -454,8 +458,10 @@ Creates a corner product badge on a product-box.
             .touch-callout();
             .tap-highlight-color();
             position: absolute;
-            top: 0; bottom: 0;
-            left: 0; right: 0;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
             margin: auto;
             display: inline-block;
             vertical-align: middle;

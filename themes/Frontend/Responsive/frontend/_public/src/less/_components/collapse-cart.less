@@ -20,7 +20,7 @@ The collapse cart element contains the current items in the users shopping cart 
 
     &.off-canvas {
         .unitize-width(280);
-        .transition(all 0.45s cubic-bezier(.3,0,.15,1));
+        .transition(all 0.45s cubic-bezier(.3, 0, .15, 1));
         margin-right: 0;
         display: block;
         height: 100%;
@@ -28,7 +28,7 @@ The collapse cart element contains the current items in the users shopping cart 
         position: fixed;
         top: 0;
         padding: 0;
-        background: #fff;
+        background: #FFFFFF;
         z-index: @zindex-collapse-cart-offcanvas;
 
         .icon--loading-indicator {
@@ -60,8 +60,8 @@ The collapse cart element contains the current items in the users shopping cart 
             box-sizing: border-box;
             display: block;
             content: "";
-            border: 2px solid #CCC;
-            border-top: 2px solid #333;
+            border: 2px solid #CCCCCC;
+            border-top: 2px solid #333333;
         }
     }
 }
@@ -72,7 +72,7 @@ The collapse cart element contains the current items in the users shopping cart 
     .unitize(font-size, 14);
     border: 1px solid @border-color;
     position: relative;
-    background: #fff;
+    background: #FFFFFF;
 
     &:after,
     &:before {
@@ -89,7 +89,7 @@ The collapse cart element contains the current items in the users shopping cart 
     &:after {
         .unitize(right, 11);
         .unitize(border-width, 9);
-        border-bottom-color: #fff;
+        border-bottom-color: #FFFFFF;
     }
 
     &:before {
@@ -112,21 +112,21 @@ The collapse cart element contains the current items in the users shopping cart 
     }
 
     .alert {
-		.reset-border-radius();
+        .reset-border-radius();
         .unitize(margin-bottom, 10);
 
         .alert--icon,
         .icon--element {
             width: 15%;
-            
+
             .is--warning {
                 color: @highlight-notice;
-                background: desaturate(lighten(@highlight-notice, 42%),20%);
+                background: desaturate(lighten(@highlight-notice, 42%), 20%);
             }
-            
+
             .is--success {
                 color: @highlight-success;
-                background: desaturate(lighten(@highlight-success, 42%),20%);
+                background: desaturate(lighten(@highlight-success, 42%), 20%);
             }
         }
 
@@ -159,7 +159,7 @@ The collapse cart element contains the current items in the users shopping cart 
 
             &.has--image {
                 border: 1px solid @border-color;
-                background: #fff;
+                background: #FFFFFF;
             }
 
             .cart--badge {
@@ -177,7 +177,7 @@ The collapse cart element contains the current items in the users shopping cart 
                     .unitize(font-size, 8);
                     .unitize(line-height, 12);
                     .unitize-width(40);
-                    color: #fff;
+                    color: #FFFFFF;
                     text-transform: uppercase;
                     text-align: center;
                     font-weight: bold;
@@ -200,7 +200,7 @@ The collapse cart element contains the current items in the users shopping cart 
                 text-align: center;
                 font-weight: bold;
                 background: @text-color;
-                color: #fff;
+                color: #FFFFFF;
 
                 .icon--arrow-right {
                     .unitize(font-size, 10);
@@ -294,7 +294,7 @@ The collapse cart element contains the current items in the users shopping cart 
 
 .off-canvas .ajax--cart {
     .unitize(font-size, 14);
-    background: #fff;
+    background: #FFFFFF;
     width: auto;
     position: absolute;
     left: 0;
@@ -321,7 +321,7 @@ The collapse cart element contains the current items in the users shopping cart 
     }
 
     .prices--container {
-		background: #fff;
+        background: #FFFFFF;
         border-bottom: 0 none;
     }
 

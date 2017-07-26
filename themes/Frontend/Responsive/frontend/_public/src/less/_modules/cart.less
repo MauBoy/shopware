@@ -235,7 +235,6 @@ Shopware offers two different shopping cart element options that can be selected
         .unitize(padding-top, 21)
     }
 
-
     .column--total-price {
         font-weight: bold;
     }
@@ -264,8 +263,12 @@ Shopware offers two different shopping cart element options that can be selected
         width: 78%;
     }
 
-    .column--quantity { .unitize-padding(0, 0, 0, 10); }
-    .column--unit-price { .unitize-padding(0, 0, 9, 10); }
+    .column--quantity {
+        .unitize-padding(0, 0, 0, 10);
+    }
+    .column--unit-price {
+        .unitize-padding(0, 0, 9, 10);
+    }
 
     .product--delivery {
         margin: 0;
@@ -281,7 +284,7 @@ Shopware offers two different shopping cart element options that can be selected
         left: 0;
         background: @brand-primary;
 
-        span{
+        span {
             .rotate(-90deg);
             text-align: center;
             line-height: 20px;
@@ -306,7 +309,7 @@ Shopware offers two different shopping cart element options that can be selected
         text-align: center;
         font-weight: bold;
         background: @text-color;
-        color: #fff;
+        color: #FFFFFF;
 
         .icon--arrow-right {
             .unitize(font-size, 13);
@@ -344,7 +347,7 @@ Shopware offers two different shopping cart element options that can be selected
     }
 
     .add-voucher--field {
-        background: #fff;
+        background: #FFFFFF;
     }
 
     .add-product--button,
@@ -408,7 +411,9 @@ Shopware offers two different shopping cart element options that can be selected
     background: @gray-light;
     border-bottom: 1px solid @border-color;
 
-    .list--entry { list-style: none }
+    .list--entry {
+        list-style: none
+    }
 
     .entry--label {
         width: 70%;
@@ -492,8 +497,10 @@ Shopware offers two different shopping cart element options that can be selected
                     .touch-callout();
                     .tap-highlight-color();
                     position: absolute;
-                    top: 0; bottom: 0;
-                    left: 0; right: 0;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
                     margin: auto;
                     display: inline-block;
                     vertical-align: middle;
@@ -511,7 +518,7 @@ Shopware offers two different shopping cart element options that can be selected
             .unitize(-19, 16, right);
             background: @brand-primary;
             position: absolute;
-            color: #fff;
+            color: #FFFFFF;
             font-weight: bold;
             z-index: @zindex-cart-premium-prodict-badge;
         }
@@ -567,8 +574,10 @@ Shopware offers two different shopping cart element options that can be selected
 
         img {
             position: absolute;
-            top: 0; bottom: 0;
-            left: 0; right: 0;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
             margin: auto;
         }
     }
@@ -675,7 +684,7 @@ Shopware offers two different shopping cart element options that can be selected
             height: 100%;
         }
 
-        .link--image img{
+        .link--image img {
             margin: 0 auto;
         }
 
@@ -712,7 +721,7 @@ Shopware offers two different shopping cart element options that can be selected
     }
 }
 
-    // Checkout Confirm
+// Checkout Confirm
 .content--confirm {
 
     .alert {
@@ -745,10 +754,10 @@ Shopware offers two different shopping cart element options that can be selected
             border: 0 none;
         }
     }
-  
+
     .payment--method.method_last,
     .dispatch--method.method_last {
-      border: 0 none;
+        border: 0 none;
     }
 
     .method--input {
@@ -795,7 +804,7 @@ Shopware offers two different shopping cart element options that can be selected
 
 @media screen and (min-width: @phoneLandscapeViewportWidth) {
 
-    .product--table{
+    .product--table {
         .column--label {
             text-align: right;
             width: 100%;
@@ -862,7 +871,7 @@ Shopware offers two different shopping cart element options that can be selected
             }
         }
         .column--tax-price {
-             margin: 0;
+            margin: 0;
 
             .tax-price--label {
                 .unitize(margin-bottom, 12);
@@ -872,9 +881,15 @@ Shopware offers two different shopping cart element options that can be selected
         .row--rebate,
         .row--premium-product,
         .row--voucher {
-            .column--label { margin: 0; }
-            .column--image { width: 15%; }
-            .column--total-price { float: right; }
+            .column--label {
+                margin: 0;
+            }
+            .column--image {
+                width: 15%;
+            }
+            .column--total-price {
+                float: right;
+            }
         }
 
         .add-product--field {
@@ -956,10 +971,14 @@ Shopware offers two different shopping cart element options that can be selected
             .unitize(margin-bottom, 20);
         }
 
-        .product--delivery { float: left }
+        .product--delivery {
+            float: left
+        }
 
         .row--voucher,
-        .row--premium-product { height: 100%; }
+        .row--premium-product {
+            height: 100%;
+        }
 
         .panel--body {
             .unitize-padding(20, 20);
@@ -983,7 +1002,9 @@ Shopware offers two different shopping cart element options that can be selected
         }
 
         // Hide all inline labels
-        .column--label { display: none }
+        .column--label {
+            display: none
+        }
 
         // Basic header styling
         .table--header {
@@ -1086,7 +1107,7 @@ Shopware offers two different shopping cart element options that can be selected
             .unitize(padding-top, 26);
         }
 
-            // Content styling
+        // Content styling
         .content--title {
             .unitize(font-size, 16);
             font-weight: bold;
@@ -1129,13 +1150,21 @@ Shopware offers two different shopping cart element options that can be selected
                 .unitize(padding-top, 22);
             }
         }
-        .row--voucher .column--total-price { .unitize(padding-top, 22); }
+        .row--voucher .column--total-price {
+            .unitize(padding-top, 22);
+        }
 
         .row--premium-product,
         .row--rebate {
-            .column--product { width: 77.5%; }
-            .column--image { width: 13.3% }
-            .column--total-price { margin-left: 0; }
+            .column--product {
+                width: 77.5%;
+            }
+            .column--image {
+                width: 13.3%
+            }
+            .column--total-price {
+                margin-left: 0;
+            }
         }
 
         // Footer
@@ -1177,7 +1206,7 @@ Shopware offers two different shopping cart element options that can be selected
             }
 
             .btn--inquiry {
-                .unitize(-130,  16, margin-left);
+                .unitize(-130, 16, margin-left);
                 .unitize-width(260);
                 top: 0;
                 position: absolute;
@@ -1267,18 +1296,26 @@ Shopware offers two different shopping cart element options that can be selected
         }
 
         .confirm--actions {
-            .main--actions { width: 25%; }
+            .main--actions {
+                width: 25%;
+            }
         }
     }
 }
 
 @media screen and (min-width: @tabletLandscapeViewportWidth) {
     .product--table {
-        .table--actions .btn--inquiry { left: 50%; }
+        .table--actions .btn--inquiry {
+            left: 50%;
+        }
 
         .column--product {
-            .column--image { width: 16% }
-            .table--content { width: 84% }
+            .column--image {
+                width: 16%
+            }
+            .table--content {
+                width: 84%
+            }
         }
 
         .row--premium-product .column--product .column--image,
@@ -1286,7 +1323,9 @@ Shopware offers two different shopping cart element options that can be selected
             width: 10.7%;
         }
 
-        .add-product--form { width: 25%; }
+        .add-product--form {
+            width: 25%;
+        }
 
         .aggregation--list {
             float: right;
@@ -1315,20 +1354,26 @@ Shopware offers two different shopping cart element options that can be selected
         }
 
         .table--header {
-            .column--product { width: 55%; }
+            .column--product {
+                width: 55%;
+            }
         }
 
         .column--product {
             width: 55%;
 
-            .column--image { width: 14%; }
-            .table--content { width: 86%; }
+            .column--image {
+                width: 14%;
+            }
+            .table--content {
+                width: 86%;
+            }
         }
 
         .row--rebate .column--actions,
         .row--premium-product .column--actions,
         .row--voucher .column--actions {
-            .unitize(21 ,16, padding-top);
+            .unitize(21, 16, padding-top);
         }
 
         .row--product .column--actions {

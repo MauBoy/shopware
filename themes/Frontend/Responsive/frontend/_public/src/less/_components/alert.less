@@ -23,7 +23,7 @@ Options: `is--success`, `is--info`, `is--warning`, `is--error`.
 
     &.is--success {
         color: darken(@highlight-success, 15%);
-        background: desaturate(lighten(@highlight-success, 42%),20%);
+        background: desaturate(lighten(@highlight-success, 42%), 20%);
 
         .alert--icon {
             background: @highlight-success;
@@ -32,7 +32,7 @@ Options: `is--success`, `is--info`, `is--warning`, `is--error`.
 
     &.is--info {
         color: darken(@highlight-info, 15%);
-        background: desaturate(lighten(@highlight-info, 36%),20%);
+        background: desaturate(lighten(@highlight-info, 36%), 20%);
 
         .alert--icon {
             background: @highlight-info;
@@ -41,7 +41,7 @@ Options: `is--success`, `is--info`, `is--warning`, `is--error`.
 
     &.is--warning {
         color: darken(@highlight-notice, 14%);
-        background: desaturate(lighten(@highlight-notice, 42%),10%);
+        background: desaturate(lighten(@highlight-notice, 42%), 10%);
 
         .alert--icon {
             background: @highlight-notice;
@@ -74,31 +74,32 @@ Options: `is--success`, `is--info`, `is--warning`, `is--error`.
         }
     }
 
-/*
-######With an Icon inside of the box.</h6>
-```
-<div class="alert is--success is--rounded">
-    <div class="alert--icon">
-    <i class="icon--element icon--check"></i>
+    /*
+    ######With an Icon inside of the box.</h6>
+    ```
+    <div class="alert is--success is--rounded">
+        <div class="alert--icon">
+        <i class="icon--element icon--check"></i>
+        </div>
+        <div class="alert--content">
+        Success message with Icon
+        </div>
     </div>
-    <div class="alert--content">
-    Success message with Icon
-    </div>
-</div>
 
-<div class="alert is--warning is--rounded">
-    <div class="alert--icon">
-    <i class="icon--element icon--warning"></i>
+    <div class="alert is--warning is--rounded">
+        <div class="alert--icon">
+        <i class="icon--element icon--warning"></i>
+        </div>
+        <div class="alert--content">
+        Warning message with Icon
+        </div>
     </div>
-    <div class="alert--content">
-    Warning message with Icon
-    </div>
-</div>
-```
-*/
+    ```
+    */
     .icon--element {
         position: absolute;
-        top: 50%; left: 0;
+        top: 50%;
+        left: 0;
         width: 15%;
         margin-top: -9px;
     }
@@ -109,7 +110,9 @@ Options: `is--success`, `is--info`, `is--warning`, `is--error`.
         .unitize-padding(10, 10);
         float: left;
 
-        p { .unitize(margin-bottom, 0) }
+        p {
+            .unitize(margin-bottom, 0)
+        }
     }
 
     // Icon column
@@ -119,7 +122,7 @@ Options: `is--success`, `is--info`, `is--warning`, `is--error`.
         width: 15%;
         text-align: center;
         font-weight: bold;
-        color: #fff;
+        color: #FFFFFF;
 
         // Simple faux column technique
         padding-bottom: 9999em;

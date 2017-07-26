@@ -10,14 +10,16 @@ The header sizes are defined by the unitize mixin.
 More precise designations are commented inside the document.
 */
 
-    // Basic header
+// Basic header
 .header-main {
     .unitize(padding-bottom, 10);
-    background: #fff;
+    background: #FFFFFF;
     border-bottom: 1px solid @brand-primary;
 
     // Hide the currency and language switcher
-    .top-bar { display: none }
+    .top-bar {
+        display: none
+    }
 
     // Logo
     .logo-main {
@@ -45,18 +47,26 @@ More precise designations are commented inside the document.
     }
 }
 
-    // Small Checkout & Registration Header
+// Small Checkout & Registration Header
 .is--ctl-checkout.is--minimal-header,
 .is--ctl-register.is--minimal-header,
 .is--ctl-register.is--minimal-header.is--target-checkout {
 
     // Header Support Info
     .header-main {
-        .logo-main { width: 100%; }
-        .logo--shop { width: 50% }
-        .logo--link { .unitize(margin-top, 10); }
+        .logo-main {
+            width: 100%;
+        }
+        .logo--shop {
+            width: 50%
+        }
+        .logo--link {
+            .unitize(margin-top, 10);
+        }
 
-        .logo--supportinfo { display: none; }
+        .logo--supportinfo {
+            display: none;
+        }
         border-bottom: 1px solid @brand-primary;
 
         .btn--back-top-shop {
@@ -70,7 +80,7 @@ More precise designations are commented inside the document.
     }
 }
 
-    // Shop navigation
+// Shop navigation
 .shop--navigation {
     position: relative;
 
@@ -90,7 +100,9 @@ More precise designations are commented inside the document.
             vertical-align: middle;
         }
 
-        .cart--link { .unitize-padding(2, 10, 2, 6); }
+        .cart--link {
+            .unitize-padding(2, 10, 2, 6);
+        }
         .account--link {
             .unitize-padding(2, 10, 2, 8);
 
@@ -107,7 +119,7 @@ More precise designations are commented inside the document.
                 position: absolute;
                 background: @highlight-success;
                 font-family: @sw-icon-fontname;
-                color: #fff;
+                color: #FFFFFF;
             }
         }
 
@@ -192,11 +204,13 @@ More precise designations are commented inside the document.
             border: 0 none;
         }
 
-        .icon--menu { .unitize(font-size, 20); }
+        .icon--menu {
+            .unitize(font-size, 20);
+        }
     }
 }
 
-    // Default ajax search form
+// Default ajax search form
 .main-search--form {
     .unitize-padding(10, 10);
     width: 100%;
@@ -208,7 +222,7 @@ More precise designations are commented inside the document.
     .main-search--field {
         .unitize-padding(9, 38, 9, 9);
         .unitize-height(40, 16);
-        background: #fff;
+        background: #FFFFFF;
         vertical-align: middle;
         width: 100%;
         position: relative;
@@ -245,7 +259,7 @@ More precise designations are commented inside the document.
         .unitize(padding-left, 23);
     }
 
-    .navigation--link.navigation--personalized  {
+    .navigation--link.navigation--personalized {
         .unitize(padding-top, 9);
         .unitize(padding-bottom, 9);
 
@@ -276,7 +290,6 @@ More precise designations are commented inside the document.
         }
     }
 }
-
 
 // Drowdown menu for account navigation
 .account--dropdown-navigation {
@@ -337,11 +350,11 @@ More precise designations are commented inside the document.
                 display: block;
                 margin: 0;
 
-                .navigation--link.link--logout.navigation--personalized  {
+                .navigation--link.link--logout.navigation--personalized {
                     .unitize(padding-top, 9);
                     .unitize(padding-bottom, 9);
 
-                     [class^="icon--"] {
+                    [class^="icon--"] {
                         .unitize-margin(0, 5, 0, 0);
                         display: inline-block;
                     }
@@ -350,13 +363,13 @@ More precise designations are commented inside the document.
         }
 
         .account--close-off-canvas {
-            color: #fff;
+            color: #FFFFFF;
             font-weight: bold;
         }
     }
 }
 
-    // Creating the arrow on active search field
+// Creating the arrow on active search field
 .has--csstransforms .entry--search .entry--trigger {
     &.is--active::after {
         .rotate(-45deg);
@@ -386,7 +399,7 @@ More precise designations are commented inside the document.
     .unitize(padding-bottom, 70);
 }
 
-    // Loading indicator for css animations supported browsers
+// Loading indicator for css animations supported browsers
 .has--cssanimations {
     .form--ajax-loader {
         .unitize(top, 20);
@@ -407,7 +420,7 @@ More precise designations are commented inside the document.
     }
 }
 
-    // Loading indicator for non css animations supported browsers
+// Loading indicator for non css animations supported browsers
 .has--no-cssanimations .form--ajax-loader {
     .unitize(top, 24);
     .unitize(right, 55);
@@ -418,7 +431,7 @@ More precise designations are commented inside the document.
     background-image: url('../../img/icons/loading-indicator.gif');
 }
 
-    // Search results modal
+// Search results modal
 .main-search--results {
     .clearfix();
     .unitize(top, 110);
@@ -432,10 +445,10 @@ More precise designations are commented inside the document.
 
 .results--list {
     .unitize-padding(10, 10);
-    .box-shadow(0 10px 25px -15px #000);
+    .box-shadow(0 10px 25px -15px #000000);
     border-top: 1px solid @border-color;
     border-bottom: 1px solid @border-color;
-    background: #fff;
+    background: #FFFFFF;
     -ms-touch-action: manipulation;
 
     &::after {
@@ -446,7 +459,7 @@ More precise designations are commented inside the document.
         content: '';
         display: block;
         position: absolute;
-        background: #fff;
+        background: #FFFFFF;
         left: 48%;
         border: 1px solid @border-color;
         border-top: 0 none;
@@ -470,7 +483,9 @@ More precise designations are commented inside the document.
         .unitize(line-height, 30);
         border-bottom: 1px solid @border-color;
 
-        &:last-child { border: 0 none; }
+        &:last-child {
+            border: 0 none;
+        }
     }
 
     .entry--no-results {
@@ -572,7 +587,7 @@ More precise designations are commented inside the document.
     }
 }
 
-    // Phone Landscape styling for the global shop header
+// Phone Landscape styling for the global shop header
 @media screen and (min-width: @phoneLandscapeViewportWidth) {
 
     .is--ctl-checkout.is--minimal-header,
@@ -598,7 +613,9 @@ More precise designations are commented inside the document.
         }
 
         // Don't display toggle search bar icon
-        .entry--trigger { display: none; }
+        .entry--trigger {
+            display: none;
+        }
 
         .main-search--form {
             box-shadow: none;
@@ -611,7 +628,9 @@ More precise designations are commented inside the document.
             .main-search--field {
                 background: @input-bg;
 
-                &:focus { background: #fff; }
+                &:focus {
+                    background: #FFFFFF;
+                }
             }
 
             // Icon position from here to @desktopViewportWidth
@@ -636,7 +655,7 @@ More precise designations are commented inside the document.
     .results--list {
         .border-radius();
         border: 1px solid @border-color;
-        background: #fff;
+        background: #FFFFFF;
     }
 
     // Remove the active searchfield padding
@@ -659,10 +678,10 @@ More precise designations are commented inside the document.
     }
 }
 
-    // Tablet styling for the global shop header
+// Tablet styling for the global shop header
 @media screen and (min-width: @tabletViewportWidth) {
 
-    .header-main.is--active-searchfield  {
+    .header-main.is--active-searchfield {
         padding-bottom: 0;
     }
 
@@ -670,7 +689,9 @@ More precise designations are commented inside the document.
         padding-bottom: 0;
         border-bottom: 0 none;
 
-        .container { .clearfix() }
+        .container {
+            .clearfix()
+        }
 
         .top-bar {
             .unitize-padding(4, 0, 4, 0, 16);
@@ -744,7 +765,8 @@ More precise designations are commented inside the document.
                     .unitize(-6, 16, margin-top);
                     position: absolute;
                     z-index: @zindex-header-language-flag;
-                    top: 50%; left: 0;
+                    top: 50%;
+                    left: 0;
                     pointer-events: none;
                 }
             }
@@ -776,7 +798,7 @@ More precise designations are commented inside the document.
                 position: absolute;
                 display: none;
                 list-style: none;
-                background: #fff;
+                background: #FFFFFF;
                 z-index: @zindex-header-service-list;
                 border: 1px solid @border-color;
 
@@ -789,7 +811,7 @@ More precise designations are commented inside the document.
                     content: '';
                     display: block;
                     position: absolute;
-                    background: #fff;
+                    background: #FFFFFF;
                     border-color: @border-color;
                     border-width: 0 0 1px 1px;
                     border-style: solid;
@@ -819,7 +841,9 @@ More precise designations are commented inside the document.
             .unitize-padding(0, 0, 0, 10);
             width: 35%;
 
-            .logo--link { .unitize-height(50, 16); }
+            .logo--link {
+                .unitize-height(50, 16);
+            }
 
             // Larger logo for tablet & desktop viewports
             .logo--shop {
@@ -841,7 +865,9 @@ More precise designations are commented inside the document.
                 width: 100%;
             }
 
-            .logo--shop { width: 35% }
+            .logo--shop {
+                width: 35%
+            }
 
             .logo--link {
                 margin-top: 0;
@@ -884,12 +910,18 @@ More precise designations are commented inside the document.
             }
         }
 
-        .entry--link { font-weight: normal; }
-        .entry--menu-left { display: none; }
+        .entry--link {
+            font-weight: normal;
+        }
+        .entry--menu-left {
+            display: none;
+        }
 
         .cart--quantity,
         .search--display,
-        .entry--account { display: inline-block; }
+        .entry--account {
+            display: inline-block;
+        }
 
         // Search entry
         .entry--search {
@@ -897,12 +929,14 @@ More precise designations are commented inside the document.
             position: absolute;
             left: 3%;
             margin-right: 10%;
-            background: #fff;
+            background: #FFFFFF;
             padding: 0;
             border: 0 none;
             width: 50%;
 
-            .entry--trigger { display: none }
+            .entry--trigger {
+                display: none
+            }
         }
 
         // Search form
@@ -914,7 +948,9 @@ More precise designations are commented inside the document.
         }
     }
 
-    .main-search--form { left: auto; }
+    .main-search--form {
+        left: auto;
+    }
 
     // Drowdown menu for account navigation
     .account--dropdown-navigation {
@@ -950,7 +986,7 @@ More precise designations are commented inside the document.
 
         .account--menu {
             text-align: left;
-            background: #fff;
+            background: #FFFFFF;
 
             &::after {
                 .rotate(135deg);
@@ -960,7 +996,7 @@ More precise designations are commented inside the document.
                 content: '';
                 display: block;
                 position: absolute;
-                background: #fff;
+                background: #FFFFFF;
                 border-color: @border-color;
                 border-width: 0 0 1px 1px;
                 border-style: solid;
@@ -994,12 +1030,16 @@ More precise designations are commented inside the document.
     }
 }
 
-    // Tablet Landscape styling for the global shop header
+// Tablet Landscape styling for the global shop header
 @media screen and (min-width: @tabletLandscapeViewportWidth) {
 
     .header-main {
-        .logo-main { width: 30%; }
-        .shop--navigation { width: 70%; }
+        .logo-main {
+            width: 30%;
+        }
+        .shop--navigation {
+            width: 70%;
+        }
     }
 
     .shop--navigation {
@@ -1017,8 +1057,12 @@ More precise designations are commented inside the document.
         .header-main {
             .box-shadow(0 1px 2px 0 @border-color);
 
-            .logo--shop { width: 30% }
-            .logo--supportinfo { width: 35%; }
+            .logo--shop {
+                width: 30%
+            }
+            .logo--supportinfo {
+                width: 35%;
+            }
 
             .btn--back-top-shop {
                 display: inline-block;
@@ -1030,13 +1074,17 @@ More precise designations are commented inside the document.
     .navigation--list {
 
         // Reset the button width
-        .navigation--entry .btn { width: auto; }
+        .navigation--entry .btn {
+            width: auto;
+        }
 
         // Custom styling cart button
         .entry--cart {
             .cart--link {
                 .unitize(padding-left, 50);
-                .cart--quantity { display: inline-block; }
+                .cart--quantity {
+                    display: inline-block;
+                }
                 .cart--amount {
                     display: inline-block;
                     color: @brand-primary;
@@ -1094,12 +1142,16 @@ More precise designations are commented inside the document.
     }
 }
 
-    // Desktop styling for the global shop header
+// Desktop styling for the global shop header
 @media screen and (min-width: @desktopViewportWidth) {
 
     .header-main {
-        .top-bar { .unitize(margin-bottom, 2); }
-        .logo--shop { width: 75% }
+        .top-bar {
+            .unitize(margin-bottom, 2);
+        }
+        .logo--shop {
+            width: 75%
+        }
     }
 
     // Small Checkout & Registration Header
@@ -1110,9 +1162,15 @@ More precise designations are commented inside the document.
         .header-main {
             .box-shadow(0 1px 2px 0 @border-color);
 
-            .logo-main { padding-right: 0; }
-            .logo--shop { width: 30% }
-            .logo--supportinfo { width: 35%; }
+            .logo-main {
+                padding-right: 0;
+            }
+            .logo--shop {
+                width: 30%
+            }
+            .logo--supportinfo {
+                width: 35%;
+            }
 
             .btn--back-top-shop {
                 display: inline-block;
@@ -1138,10 +1196,14 @@ More precise designations are commented inside the document.
         }
 
         // Search entry
-        .entry--search { width: 40%; }
+        .entry--search {
+            width: 40%;
+        }
 
         // Reset the right margin for desktop
-        .entry--cart { margin-right: 0; }
+        .entry--cart {
+            margin-right: 0;
+        }
     }
 
     .account--menu.is--personalized {
@@ -1153,7 +1215,7 @@ More precise designations are commented inside the document.
     // Topbar navigation
     .header-main .top-bar--navigation {
         .service--list {
-            right:  0;
+            right: 0;
         }
 
         .navigation--entry:last-child {

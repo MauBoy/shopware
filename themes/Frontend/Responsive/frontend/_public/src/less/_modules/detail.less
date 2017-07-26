@@ -221,7 +221,6 @@ It contains the product actions, the product information such as pictures and de
         }
     }
 
-
     // Content headlines
     .content--title {
         .unitize(font-size, 18);
@@ -252,7 +251,7 @@ It contains the product actions, the product information such as pictures and de
             }
 
             th {
-                color: #fff;
+                color: #FFFFFF;
                 text-align: left;
             }
         }
@@ -348,7 +347,7 @@ It contains the product actions, the product information such as pictures and de
     display: none;
 }
 
-    // Product reviews form
+// Product reviews form
 .review--form {
     .review--field {
         .unitize-margin(0, 0, 10, 0);
@@ -364,7 +363,7 @@ It contains the product actions, the product information such as pictures and de
     }
 }
 
-    // Product description
+// Product description
 .product--description {
     ol, ul {
         .unitize-margin(0, 16, 16);
@@ -376,13 +375,13 @@ It contains the product actions, the product information such as pictures and de
     }
 }
 
-    // Product review entry
+// Product review entry
 .review--entry {
     .border-radius();
     .unitize-margin(0, 0, 25, 0);
     .unitize-padding(20, 20);
     .unitize(font-size, 14);
-    background: #fff;
+    background: #FFFFFF;
     border: 1px solid @border-color;
 
     &.is--last {
@@ -417,7 +416,7 @@ It contains the product actions, the product information such as pictures and de
     }
 }
 
-    // Product review entry - Administrator answer
+// Product review entry - Administrator answer
 .review--entry.is--answer {
     .unitize-margin(0, 10, 30, 10);
     .unitize-padding(20, 10);
@@ -438,7 +437,7 @@ It contains the product actions, the product information such as pictures and de
     }
 }
 
-        //* Product review form */
+//* Product review form */
 .content--product-reviews {
     .alert {
         .unitize-margin(0, 0, 16, 0, 16);
@@ -454,11 +453,11 @@ It contains the product actions, the product information such as pictures and de
     .unitize-padding(2, 7);
     .border-radius();
     background: @brand-secondary;
-    color: #fff;
+    color: #FFFFFF;
     font-weight: bold;
 }
 
-    // Product notification
+// Product notification
 .product--notification {
     .unitize-margin(0, 0, 16, 0);
 
@@ -471,7 +470,9 @@ It contains the product actions, the product information such as pictures and de
         position: relative;
         width: 80%;
 
-        &:focus { z-index: @zindex-detail-notification-field-focus; }
+        &:focus {
+            z-index: @zindex-detail-notification-field-focus;
+        }
     }
     .notification--button {
         .unitize-padding(3, 10);
@@ -486,11 +487,11 @@ It contains the product actions, the product information such as pictures and de
     }
 }
 
-    // Product configurator
+// Product configurator
 .configurator--form {
     .unitize-padding(10, 0);
 
-    .select-field { 
+    .select-field {
         max-width: 100%;
     }
 }
@@ -502,7 +503,7 @@ It contains the product actions, the product information such as pictures and de
 }
 
 .is--ctl-detail .content-main--inner {
-    background: #fff;
+    background: #FFFFFF;
     position: relative;
 }
 
@@ -576,7 +577,7 @@ It contains the product actions, the product information such as pictures and de
     }
 }
 
-    // Smartphone landscape - min-width: 480px
+// Smartphone landscape - min-width: 480px
 @media screen and (min-width: @phoneLandscapeViewportWidth) {
     .product--details {
 
@@ -717,7 +718,7 @@ It contains the product actions, the product information such as pictures and de
     }
 }
 
-    // Tablet landscape - min-width: 1024px
+// Tablet landscape - min-width: 1024px
 @media screen and (min-width: @tabletLandscapeViewportWidth) {
     .product--details {
 
@@ -784,7 +785,7 @@ It contains the product actions, the product information such as pictures and de
     }
 
     .product--details {
-        .product--header{
+        .product--header {
             .unitize(padding-top, 45);
         }
 
@@ -812,7 +813,7 @@ It contains the product actions, the product information such as pictures and de
             .transition(background 0.3s ease);
             background: rgba(red(@brand-secondary), green(@brand-secondary), blue(@brand-secondary), 0.1);
             text-align: center;
-            color: #fff;
+            color: #FFFFFF;
             display: block;
 
             .link--prev-inner,
@@ -826,12 +827,12 @@ It contains the product actions, the product information such as pictures and de
             .unitize-width(200);
             .unitize-height(255);
             float: left;
-            background: #fff;
+            background: #FFFFFF;
             position: relative;
         }
 
         .image--container {
-            .transition(all 0.45s cubic-bezier(.16,.04,.14,1));
+            .transition(all 0.45s cubic-bezier(.16, .04, .14, 1));
             width: 100%;
             height: 100%;
             background-position: center center;
@@ -862,7 +863,7 @@ It contains the product actions, the product information such as pictures and de
 
         .link--prev,
         .link--next {
-            .transition(all 0.38s cubic-bezier(.16,.04,.14,1));
+            .transition(all 0.38s cubic-bezier(.16, .04, .14, 1));
 
             &:hover {
                 .link--prev-button,

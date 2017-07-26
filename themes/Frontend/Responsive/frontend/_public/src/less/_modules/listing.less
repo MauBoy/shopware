@@ -8,17 +8,17 @@ The styling defines the listing components such as the product filter element.
 It contains the viewport specific styles inside media queries.
 */
 
-    // Listing main content
+// Listing main content
 .listing--content {
     .unitize-margin(20, 0);
 }
 
-    // Category banner
+// Category banner
 .banner--container {
     .unitize-margin(0, 0, 20, 0);
 }
 
-    // Listing teaser text
+// Listing teaser text
 .category--teaser {
     .unitize-margin(0, 0, 20, 0);
 
@@ -38,7 +38,7 @@ It contains the viewport specific styles inside media queries.
     }
 }
 
-    // Vendor information
+// Vendor information
 .vendor--info {
     .clearfix();
     .unitize-margin(0, 0, 20, 0);
@@ -79,7 +79,6 @@ It contains the viewport specific styles inside media queries.
     }
 }
 
-
 .action--filter-btn {
     .unitize(margin-bottom, 10);
 
@@ -101,13 +100,13 @@ It contains the viewport specific styles inside media queries.
             .primary-gradient();
             .border-radius();
             display: inline-block;
-            color: #fff;
+            color: #FFFFFF;
             float: right;
         }
     }
 }
 
-    // Filter options
+// Filter options
 .action--filter-options {
     .filter--container {
         .unitize-padding(0, 10);
@@ -117,11 +116,11 @@ It contains the viewport specific styles inside media queries.
         .unitize-padding(12, 10);
         .secondary-gradient();
         display: block;
-        color: #fff;
+        color: #FFFFFF;
         font-weight: bold;
 
         &:hover {
-            color: #fff;
+            color: #FFFFFF;
         }
 
         .icon--arrow-right {
@@ -158,7 +157,7 @@ It contains the viewport specific styles inside media queries.
     }
 }
 
-    // Sorting options
+// Sorting options
 .action--sort {
     .unitize(margin-bottom, 20);
     display: block;
@@ -178,12 +177,12 @@ It contains the viewport specific styles inside media queries.
     }
 }
 
-    // Items per page filter
+// Items per page filter
 .action--per-page {
     display: none;
 }
 
-    // Listing paging
+// Listing paging
 .listing--paging {
     .clearfix();
     .unitize-padding(10, 0);
@@ -213,7 +212,7 @@ It contains the viewport specific styles inside media queries.
     padding: 0 0 2% 0;
 }
 
-    // button wrapper for ininite scrolling actions
+// button wrapper for ininite scrolling actions
 .infinite--actions {
     width: 100%;
     margin: 0 auto;
@@ -224,7 +223,7 @@ It contains the viewport specific styles inside media queries.
     }
 }
 
-    // Tablet view
+// Tablet view
 @media screen and(min-width: @tabletViewportWidth) {
 
     .category--teaser {
@@ -288,7 +287,9 @@ It contains the viewport specific styles inside media queries.
         text-align: right;
         float: right;
 
-        .per-page--label { display: none }
+        .per-page--label {
+            display: none
+        }
 
         .per-page--select {
             .unitize-width(80);
@@ -368,7 +369,7 @@ It contains the viewport specific styles inside media queries.
         padding: 0;
         overflow: visible;
         position: relative;
-        background: #fff;
+        background: #FFFFFF;
         border: 0 none;
         clear: both;
 
@@ -439,7 +440,7 @@ It contains the viewport specific styles inside media queries.
     }
 }
 
-    // Desktop view
+// Desktop view
 @media screen and(min-width: @desktopViewportWidth) {
 
     .listing--content {
@@ -461,7 +462,7 @@ It contains the viewport specific styles inside media queries.
     }
 
     .action--filter-options {
-        background: #fff;
+        background: #FFFFFF;
 
         &.is--collapsed,
         &.is--active-filter {

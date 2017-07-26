@@ -21,23 +21,17 @@ Please refer to <http://caniuse.com/#search=keyframe> to see the browser support
     }
 }
 
-@keyframe--spin: {
-    from {
-        .rotate(0);
-    }
-    to {
-        .rotate(360deg);
-    }
-};
+@keyframe--spin: { from {
+    .rotate(0);
+} to {
+      .rotate(360deg);
+  } };
 
-@keyframe--spin-reverse: {
-    from {
-        .rotate(360deg);
-    }
-    to {
-        .rotate(0);
-    }
-};
+@keyframe--spin-reverse: { from {
+    .rotate(360deg);
+} to {
+      .rotate(0);
+  } };
 
 .keyframes(keyframe--spin, @keyframe--spin);
 

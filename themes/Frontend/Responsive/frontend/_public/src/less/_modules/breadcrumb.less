@@ -75,7 +75,9 @@ The main breadcrumb is positioned below the main navigation bar.
         display: block;
         color: @text-color;
 
-        &:hover { color: @link-color; }
+        &:hover {
+            color: @link-color;
+        }
     }
 
     // Active link
@@ -129,7 +131,7 @@ The main breadcrumb is positioned below the main navigation bar.
 }
 
 @media screen and(min-width: @desktopViewportWidth) {
-    .content--breadcrumb  {
+    .content--breadcrumb {
         .unitize-padding(0, 40);
     }
 }

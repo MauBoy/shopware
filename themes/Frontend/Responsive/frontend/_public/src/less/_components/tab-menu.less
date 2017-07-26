@@ -45,7 +45,7 @@ The functionality is provided by the `jquery.tab-menu.js` file.
 
         &:hover {
             color: @link-color;
-            background: #fff;
+            background: #FFFFFF;
         }
 
         &:focus {
@@ -54,8 +54,8 @@ The functionality is provided by the `jquery.tab-menu.js` file.
 
         &.is--active {
             color: @text-color-dark;
-            border-bottom-color: #fff;
-            background: #fff;
+            border-bottom-color: #FFFFFF;
+            background: #FFFFFF;
 
             &:hover {
                 color: @text-color-dark;
@@ -69,8 +69,12 @@ The functionality is provided by the `jquery.tab-menu.js` file.
 
     // Different styling when tab navigation is scrollable
     &.js--menu-scroller {
-        .tab--navigation { overflow: hidden; }
-        .tab--navigation .js--menu-scroller--item { top: 0; }
+        .tab--navigation {
+            overflow: hidden;
+        }
+        .tab--navigation .js--menu-scroller--item {
+            top: 0;
+        }
 
         .js--menu-scroller--arrow {
             .unitize(line-height, 46);

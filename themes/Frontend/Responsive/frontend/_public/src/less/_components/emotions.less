@@ -43,7 +43,7 @@ Shopware 5 provides 11 integrated elements inside the shopping worlds that can b
     }
 }
 
-    // Content fullscreen mode
+// Content fullscreen mode
 .content-main.is--fullscreen {
     box-shadow: none;
     max-width: none;
@@ -77,7 +77,7 @@ Shopware 5 provides 11 integrated elements inside the shopping worlds that can b
     }
 }
 
-    // Emotion loading overlay
+// Emotion loading overlay
 .emotion--overlay {
     .unitize-width(50);
     .unitize-height(50);
@@ -104,7 +104,7 @@ Shopware 5 provides 11 integrated elements inside the shopping worlds that can b
     }
 }
 
-    // Emotion loading indicator
+// Emotion loading indicator
 .emotion--loading-indicator {
     .unitize-width(21);
     .unitize-height(21);
@@ -124,11 +124,11 @@ Shopware 5 provides 11 integrated elements inside the shopping worlds that can b
         content: "";
         border-width: 2px;
         border-style: solid;
-        border-color: #333 #CCC #CCC #CCC;
+        border-color: #333333 #CCCCCC #CCCCCC #CCCCCC;
     }
 }
 
-    // Emotion content
+// Emotion content
 .content--emotions {
     display: block;
 
@@ -137,9 +137,9 @@ Shopware 5 provides 11 integrated elements inside the shopping worlds that can b
     }
 }
 
-    // Emotion preview content
+// Emotion preview content
 body.emotion--preview {
-    background: #fff;
+    background: #FFFFFF;
 
     .content-main {
         box-shadow: none;
@@ -147,12 +147,12 @@ body.emotion--preview {
     }
 }
 
-    // Emotion show listing link
+// Emotion show listing link
 .emotion--show-listing {
     .unitize-margin(20, 0);
 }
 
-    // Emotion wrapper
+// Emotion wrapper
 .emotion--wrapper {
     .unitize-max-width(1160);
     display: block;
@@ -164,14 +164,15 @@ body.emotion--preview {
     }
 }
 
-    // Emotion container
+// Emotion container
 .emotion--container {
     .clearfix();
     display: block;
     position: relative;
     top: 0;
     left: 0;
-f
+    background: #FFFFFF;
+
     &.emotion--mode-resize {
         .transform-origin(0, 0, 0);
     }
@@ -348,7 +349,7 @@ f
     }
 }
 
-    // Emotion element
+// Emotion element
 .emotion--element {
     display: block;
     position: absolute;
@@ -364,7 +365,7 @@ f
     }
 }
 
-    // Banner element
+// Banner element
 .emotion--banner {
     height: 100%;
     width: 100%;
@@ -476,7 +477,7 @@ f
     }
 }
 
-    // Banner-Slider element
+// Banner-Slider element
 .emotion--banner-slider {
     width: 100%;
     height: 100%;
@@ -510,7 +511,7 @@ f
         top: 0;
         left: 0;
         z-index: @zindex-emotion-image-slider-title;
-        color: #fff;
+        color: #FFFFFF;
         font-weight: 600;
         background: rgba(0, 0, 0, 0.5);
         white-space: nowrap;
@@ -567,7 +568,7 @@ f
     }
 }
 
-    // Product-Slider element
+// Product-Slider element
 .emotion--product-slider {
     width: 100%;
     height: 100%;
@@ -603,8 +604,12 @@ f
     }
 
     .product-slider--arrow {
-        &.arrow--next { border-right: 0 none; }
-        &.arrow--prev { border-left: 0 none; }
+        &.arrow--next {
+            border-right: 0 none;
+        }
+        &.arrow--prev {
+            border-left: 0 none;
+        }
     }
 
     .box--emotion {
@@ -652,7 +657,7 @@ f
     }
 }
 
-    // Product-Box element
+// Product-Box element
 .emotion--product {
     width: 100%;
     height: 100%;
@@ -706,7 +711,7 @@ f
     }
 }
 
-    // Category-Teaser element
+// Category-Teaser element
 .emotion--category-teaser {
     width: 100%;
     height: 100%;
@@ -733,7 +738,7 @@ f
         position: absolute;
         bottom: 0;
         left: 0;
-        color: #fff;
+        color: #FFFFFF;
         font-weight: 600;
         background: rgba(0, 0, 0, 0.5);
         white-space: nowrap;
@@ -742,7 +747,7 @@ f
     }
 }
 
-    // Manufacturer element
+// Manufacturer element
 .emotion--manufacturer {
     width: 100%;
     height: 100%;
@@ -820,7 +825,7 @@ f
     }
 }
 
-    // YouTube element
+// YouTube element
 .emotion--youtube {
     width: 100%;
     height: 100%;
@@ -830,7 +835,7 @@ f
     }
 }
 
-    // Video element
+// Video element
 .emotion--video {
     width: 100%;
     height: 100%;
@@ -854,7 +859,7 @@ f
     .video--element {
         width: 100%;
         height: 100%;
-        background: #000;
+        background: #000000;
         position: absolute;
         top: 0;
         left: 0;
@@ -872,7 +877,7 @@ f
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
-        background-color: #000;
+        background-color: #000000;
         text-align: center;
 
         .video--play-icon {
@@ -887,7 +892,7 @@ f
             left: 0;
             margin: auto;
             text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
-            color: #fff;
+            color: #FFFFFF;
         }
     }
 
@@ -902,8 +907,8 @@ f
         .border-radius(100%);
         position: absolute;
         cursor: pointer;
-        color: #fff;
-        border: 2px solid #fff;
+        color: #FFFFFF;
+        border: 2px solid #FFFFFF;
         text-align: center;
         z-index: @zindex-emotion-video-play-btn;
     }
@@ -913,10 +918,12 @@ f
         height: 100%;
         margin: auto;
         position: absolute;
-        left: 0; right: 0;
-        top: 0; bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
         z-index: @zindex-emotion-video-text;
-        color: #fff;
+        color: #FFFFFF;
         text-align: center;
 
         &.no--events {
@@ -925,7 +932,7 @@ f
     }
 }
 
-    // Iframe element
+// Iframe element
 .emotion--iframe {
     width: 100%;
     height: 100%;
@@ -935,7 +942,7 @@ f
     }
 }
 
-    // Blog element
+// Blog element
 .emotion--blog {
     width: 100%;
     height: 100%;
@@ -989,7 +996,7 @@ f
     }
 }
 
-    // HTML element
+// HTML element
 .emotion--html {
     width: 100%;
     height: 100%;

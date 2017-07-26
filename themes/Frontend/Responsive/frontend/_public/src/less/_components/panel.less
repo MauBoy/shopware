@@ -34,6 +34,7 @@ Styling options: `has--border` and `has--shadow`
         border: 1px solid @panel-border;
     }
 }
+
 /*
 <h6>A header box for a panel.</h6>
 <p>Can be used by adding the `panel--header`-element and `primary` or `secondary` classes.</p>
@@ -59,14 +60,15 @@ Styling options: `has--border` and `has--shadow`
 
     &.secondary {
         color: @text-color;
-        background: #fff;
+        background: #FFFFFF;
     }
 
     &.primary {
         color: @brand-primary;
-        background: #fff;
+        background: #FFFFFF;
     }
 }
+
 /*
 <h6>A title heading for a panel.</h6>
 <p>The `panel--title` can be used as an alternative to the `panel--header` element.</p>
@@ -102,6 +104,7 @@ Styling options: `has--border` and `has--shadow`
         color: @brand-primary;
     }
 }
+
 /*
 <h6>The content body for a panel</h6>
 <p>Styling options: `is--slim`, `is--wide`, `is--flat`, `is--embossed`.</p>
@@ -302,7 +305,7 @@ Styling options: `has--border` and `has--shadow`
 ```
 */
 .panel--paging {
-	.unitize(line-height, 32);
+    .unitize(line-height, 32);
     display: inline-block;
 
     .paging--link {
@@ -311,12 +314,12 @@ Styling options: `has--border` and `has--shadow`
         .unitize(font-size, 14);
         .unitize(line-height, 30);
         .border-radius();
-		.linear-gradient(@btn-default-top-bg, @btn-default-bottom-bg);
+        .linear-gradient(@btn-default-top-bg, @btn-default-bottom-bg);
         display: inline-block;
         font-weight: normal;
         text-align: center;
-		border: 1px solid @btn-default-border-color;
-		color: @btn-default-text-color;
+        border: 1px solid @btn-default-border-color;
+        color: @btn-default-text-color;
 
         [class^="icon--"] {
             .unitize(font-size, 10);
@@ -324,18 +327,18 @@ Styling options: `has--border` and `has--shadow`
 
         &.is--active,
         &.is--active:hover {
-			.unitize(line-height, 32);
-			.linear-gradient(@btn-primary-top-bg, @btn-primary-bottom-bg);
-			color: @btn-primary-text-color;
-			border: 0 none;
-			font-weight: bold;
-			cursor: default;
+            .unitize(line-height, 32);
+            .linear-gradient(@btn-primary-top-bg, @btn-primary-bottom-bg);
+            color: @btn-primary-text-color;
+            border: 0 none;
+            font-weight: bold;
+            cursor: default;
         }
 
         &:hover {
-			background: @btn-default-hover-bg;
-			color: @btn-default-hover-text-color;
-			border-color: @btn-default-hover-border-color;
+            background: @btn-default-hover-bg;
+            color: @btn-default-hover-text-color;
+            border-color: @btn-default-hover-border-color;
         }
     }
 }

@@ -11,7 +11,7 @@ The styling also contains the viewport specific styles inside media queries.
 */
 
 .note--content {
-	.unitize-margin(20, 0);
+    .unitize-margin(20, 0);
 }
 
 .note--overview .panel--td {
@@ -104,7 +104,9 @@ The styling also contains the viewport specific styles inside media queries.
         .clear-form-button();
         color: @text-color;
 
-        &:hover { color: @link-color; }
+        &:hover {
+            color: @link-color;
+        }
     }
 
     [class^="icon--"] {
@@ -156,7 +158,9 @@ The styling also contains the viewport specific styles inside media queries.
         border: 1px solid @border-color;
     }
 
-    .note--compare { display: block; }
+    .note--compare {
+        display: block;
+    }
 }
 
 @media screen and(min-width: @tabletLandscapeViewportWidth) {

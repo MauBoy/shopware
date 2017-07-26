@@ -23,7 +23,7 @@ It allows the user to directly see and change the important information of their
     .clearfix();
 }
 
-    // Logout success message
+// Logout success message
 .account--logout {
     .logout--headline {
         .unitize(font-size, 24);
@@ -59,7 +59,7 @@ It allows the user to directly see and change the important information of their
     }
 }
 
-    // Account teaser text padding
+// Account teaser text padding
 .account--welcome {
     .unitize(margin-bottom, 20);
 
@@ -123,7 +123,9 @@ It allows the user to directly see and change the important information of their
 .account--orders-overview {
     border: 1px solid @panel-border;
 
-    p { .unitize(font-size, 14); }
+    p {
+        .unitize(font-size, 14);
+    }
 
     .orders--table-header {
         display: none;
@@ -236,7 +238,7 @@ It allows the user to directly see and change the important information of their
     .panel--th,
     .panel--td {
         .unitize-padding(8, 10, 7, 10);
-        width:25%;
+        width: 25%;
         text-align: right;
         white-space: nowrap;
         overflow: hidden;
@@ -260,7 +262,7 @@ It allows the user to directly see and change the important information of their
         .column--price,
         .column--total {
             .unitize-padding(10, 10, 10, 10);
-            width:100%;
+            width: 100%;
         }
     }
 
@@ -292,20 +294,20 @@ It allows the user to directly see and change the important information of their
     display: inline-block;
     position: relative;
 
-    &.status--0,  //The order has not been processed yet.
-    &.status--1,  //The order is in process
-    &.status--3,  //Partially completed
+    &.status--0, //The order has not been processed yet.
+    &.status--1, //The order is in process
+    &.status--3, //Partially completed
     &.status--6 { //The order has been sent in part
         background: @highlight-info;
     }
 
-    &.status--2,  //Completed
-    &.status--5,  //Ready for shipping
+    &.status--2, //Completed
+    &.status--5, //Ready for shipping
     &.status--7 { //The order has been sent
         background: @highlight-success;
     }
 
-    &.status--4,  //The order has been cancelled
+    &.status--4, //The order has been cancelled
     &.status--8 { //Clarification needed
         background: @highlight-error;
     }
@@ -343,7 +345,9 @@ It allows the user to directly see and change the important information of their
 .account--downloads {
     border: 1px solid @panel-border;
 
-    p { .unitize(font-size, 14) }
+    p {
+        .unitize(font-size, 14)
+    }
 
     .downloads--table-header {
         display: none;
@@ -364,7 +368,9 @@ It allows the user to directly see and change the important information of their
 .account--password-reset {
     .unitize(margin-top, 10);
 
-    p { margin: 0; }
+    p {
+        margin: 0;
+    }
 
     .password-reset--input {
         .unitize-margin(0, 0, 30, 0);
@@ -799,13 +805,13 @@ It allows the user to directly see and change the important information of their
         }
 
         .date-filter--label {
-            width:10%;
+            width: 10%;
         }
 
         .btn--filter {
             width: 20%;
             float: left;
-            height:40px;
+            height: 40px;
         }
 
         .chart--holder {
@@ -839,7 +845,7 @@ It allows the user to directly see and change the important information of their
             float: left !important;
 
             .column--value {
-                width:100%;
+                width: 100%;
             }
         }
     }
@@ -970,10 +976,10 @@ It allows the user to directly see and change the important information of their
         .unitize-margin(0, 0, 20, 0);
     }
 
-    .ui-datepicker-trigger{
+    .ui-datepicker-trigger {
         .btn();
-        .unitize-padding(10,10,9,10);
+        .unitize-padding(10, 10, 9, 10);
         .unitize-margin(0, 25, 0, 0);
-        .unitize(line-height,20);
+        .unitize(line-height, 20);
     }
 }
