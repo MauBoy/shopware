@@ -12,7 +12,7 @@ It contains the viewport specific styles inside media queries.
 
 .image-slider {
     .clearfix();
-    .backface-visibility(hidden);
+    .backface-visibility();
     display: block;
     z-index: @zindex-image-slider;
     position: relative;
@@ -20,8 +20,8 @@ It contains the viewport specific styles inside media queries.
 
 .image-slider--container {
     .unitize-height(200);
-    .tap-highlight-color(rgba(0, 0, 0, 0));
-    .backface-visibility(hidden);
+    .tap-highlight-color();
+    .backface-visibility();
     display: block;
     position: relative;
     top: 0;
@@ -34,9 +34,9 @@ It contains the viewport specific styles inside media queries.
         .unitize(-35, 16, margin-top);
         .unitize(line-height, 68);
         .unitize(font-size, 16);
-        .user-select(none);
-        .touch-callout(none);
-        .tap-highlight-color(rgba(0, 0, 0, 0));
+        .user-select();
+        .touch-callout();
+        .tap-highlight-color();
         background: rgba(255, 255, 255, 0.5);
         border: 1px solid rgba(255, 255, 255, 0.5);
         position: absolute;
@@ -49,8 +49,8 @@ It contains the viewport specific styles inside media queries.
         display: none;
 
         &.is--left {
-            .unitize(left, 0);
             .border-radius-multi(0, 3px, 3px, 0);
+            left: 0;
 
             &:before,
             &::before {
@@ -59,8 +59,8 @@ It contains the viewport specific styles inside media queries.
         }
 
         &.is--right {
-            .unitize(right, 0);
             .border-radius-multi(3px, 0, 0, 3px);
+            right: 0;
 
             &:before {
                 content: @sw-icon-arrow-right;
@@ -80,7 +80,7 @@ It contains the viewport specific styles inside media queries.
 
 .image-slider--slide {
     .clearfix();
-    .backface-visibility(hidden);
+    .backface-visibility();
     display: block;
     height: 100%;
     position: relative;
@@ -92,7 +92,7 @@ It contains the viewport specific styles inside media queries.
 }
 
 .image-slider--item {
-    .backface-visibility(hidden);
+    .backface-visibility();
     display: inline-block;
     height: 100%;
     width: 100%;
@@ -161,10 +161,10 @@ It contains the viewport specific styles inside media queries.
         .unitize(line-height, 70);
         .unitize(font-size, 14);
         .border-radius();
-        .user-select(none);
-        .touch-callout(none);
-        .tap-highlight-color(rgba(0, 0, 0, 0));
-        .linear-gradient(#ffffff, @gray-light);
+        .user-select();
+        .touch-callout();
+        .tap-highlight-color();
+        .linear-gradient(#fff, @gray-light);
         display: none;
         position: absolute;
         z-index: @zindex-image-slider-arrow;

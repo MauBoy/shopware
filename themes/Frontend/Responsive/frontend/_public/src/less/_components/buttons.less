@@ -20,7 +20,7 @@ Adding the class `is--disabled` changes the element to a disabled button.
 .btn {
     .unitize-padding(2, 10);
     .unitize(line-height, 32);
-    .border-radius(3px);
+    .border-radius();
     .appearance();
     .unitize(@btn-font-size, 16, font-size);
     .linear-gradient(@btn-default-top-bg, @btn-default-bottom-bg);
@@ -95,8 +95,8 @@ To work properly the button needs the class `is--icon-left` or `is--icon-right` 
     &:disabled:hover,
     &.is--disabled,
     &.is--disabled:hover {
-        .opacity(0.5);
         .linear-gradient(@btn-default-top-bg, @btn-default-bottom-bg);
+        opacity: 0.5;
         border: 1px solid @btn-default-border-color;
         color: @btn-default-text-color;
         cursor: not-allowed;

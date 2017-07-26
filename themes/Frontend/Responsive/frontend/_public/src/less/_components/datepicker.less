@@ -131,7 +131,7 @@ The datepicker is based on the jQuery Plugin [flatpickr](https://github.com/chml
 .flatpickr-month {
     .unitize-height(40);
     .unitize(line-height, 24);
-    .user-select(none);
+    .user-select();
     background: transparent;
     color: rgba(0,0,0,0.9);
     fill: rgba(0,0,0,0.9);
@@ -369,7 +369,7 @@ The datepicker is based on the jQuery Plugin [flatpickr](https://github.com/chml
 .flatpickr-day {
     .unitize(line-height, 40);
     .unitize-height(40);
-    .border-radius(3px);
+    .border-radius();
     background: none;
     border: 0 none;
     margin: 0;
@@ -455,7 +455,7 @@ The datepicker is based on the jQuery Plugin [flatpickr](https://github.com/chml
 .flatpickr-day.selected.startRange.endRange,
 .flatpickr-day.startRange.startRange.endRange,
 .flatpickr-day.endRange.startRange.endRange {
-    .border-radius(3px);
+    .border-radius();
 }
 
 .flatpickr-day.inRange {
@@ -623,7 +623,7 @@ span.flatpickr-weekday {
 
 .flatpickr-time .flatpickr-time-separator,
 .flatpickr-time .flatpickr-am-pm {
-    .user-select(none);
+    .user-select();
     height: inherit;
     display: inline-block;
     float: left;

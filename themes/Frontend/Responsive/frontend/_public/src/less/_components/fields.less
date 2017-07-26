@@ -26,7 +26,7 @@ input[type="password"],
 input[type="number"],
 input[type="email"],
 input[type="tel"] {
-    .appearance(none);
+    .appearance();
     .border-radius();
     .box-sizing();
 	.unitize(line-height, 19);
@@ -41,7 +41,7 @@ input[type="tel"] {
     text-align: left;
 
     &:focus {
-        .box-shadow(0 0 0 transparent);
+        box-shadow: none;
         outline: none;
         border-color: @input-focus-border;
         background: @input-focus-bg;
@@ -129,7 +129,7 @@ Creates a styled combobox selection for the basic select element.
     }
 
     select {
-        .appearance(none);
+        .appearance();
         .unitize-padding(0, 40, 0, 10);
         .unitize(line-height, 40);
         .border-radius();
@@ -172,7 +172,7 @@ Creates a styled combobox selection for the basic select element.
         }
 
         &:disabled {
-            .opacity(.5);
+            opacity: 0.5;
             cursor: not-allowed;
         }
 
@@ -187,7 +187,7 @@ Creates a styled combobox selection for the basic select element.
         .unitize-width(30);
         .unitize-height(40);
         .unitize(top, 1);
-        .user-select(none);
+        .user-select();
         line-height: 40px;
         max-height: 100%;
         display: block;
@@ -209,7 +209,7 @@ Creates a styled combobox selection for the basic select element.
     &.is--disabled {
         select,
         &:after {
-            .opacity(.5);
+            opacity: 0.5;
             cursor: not-allowed;
         }
     }

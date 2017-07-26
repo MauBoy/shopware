@@ -29,7 +29,7 @@ The footer element sizes are defined with the unitize mixin.
     }
 
     .column--headline {
-        .user-select(none);
+        .user-select();
         .unitize-padding(8, 0);
         margin: 0;
         font-weight: 700;
@@ -117,10 +117,10 @@ The footer element sizes are defined with the unitize mixin.
     }
 
     .newsletter--button {
-        .box-shadow(0 0 0 transparent);
         .border-radius-multi(0, 3px, 3px, 0);
         .unitize-padding(3, 5, 3, 5, 16);
         .unitize(-1, 16, margin-left);
+        box-shadow: none;
         position: relative;
         width: 12.5%;
         text-align: center;

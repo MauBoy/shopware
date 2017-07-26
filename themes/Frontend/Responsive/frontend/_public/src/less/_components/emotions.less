@@ -45,7 +45,7 @@ Shopware 5 provides 11 integrated elements inside the shopping worlds that can b
 
     // Content fullscreen mode
 .content-main.is--fullscreen {
-    .box-shadow(none);
+    box-shadow: none;
     max-width: none;
     padding: 0;
     margin: 0;
@@ -82,7 +82,7 @@ Shopware 5 provides 11 integrated elements inside the shopping worlds that can b
     .unitize-width(50);
     .unitize-height(50);
     .unitize(top, 50);
-    .border-radius(3px);
+    .border-radius();
     margin: 0 auto;
     position: relative;
     left: 0;
@@ -91,8 +91,10 @@ Shopware 5 provides 11 integrated elements inside the shopping worlds that can b
     & .emotion--loading-indicator {
         padding: 0;
         position: absolute;
-        top: 0; bottom: 0;
-        left: 0; right: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
         margin: auto;
     }
 
@@ -137,10 +139,10 @@ Shopware 5 provides 11 integrated elements inside the shopping worlds that can b
 
     // Emotion preview content
 body.emotion--preview {
-    background: #ffffff;
+    background: #fff;
 
     .content-main {
-        .box-shadow(none);
+        box-shadow: none;
         margin: 0;
     }
 }
@@ -152,9 +154,9 @@ body.emotion--preview {
 
     // Emotion wrapper
 .emotion--wrapper {
+    .unitize-max-width(1160);
     display: block;
     margin: 0 auto;
-    max-width: 1160px;
     overflow: hidden;
 
     &.is--fullscreen {
@@ -167,9 +169,9 @@ body.emotion--preview {
     .clearfix();
     display: block;
     position: relative;
-    top: 0; left: 0;
-    background: #fff;
-
+    top: 0;
+    left: 0;
+f
     &.emotion--mode-resize {
         .transform-origin(0, 0, 0);
     }
@@ -350,11 +352,13 @@ body.emotion--preview {
 .emotion--element {
     display: block;
     position: absolute;
-    top: 0; left: 0;
+    top: 0;
+    left: 0;
 
     .emotion--container.emotion--mode-rows & {
         position: relative;
-        top: 0; left: 0;
+        top: 0;
+        left: 0;
         float: left;
         vertical-align: top;
     }
@@ -371,39 +375,48 @@ body.emotion--preview {
         .transform(translate(-50%, -50%));
         display: block;
         position: absolute;
-        top: 50%; left: 50%;
+        top: 50%;
+        left: 50%;
 
         &.left.top {
             .transform(translate(0, 0));
-            left: 0; top: 0;
+            left: 0;
+            top: 0;
         }
         &.left.center {
             .transform(translate(0, -50%));
-            left: 0; top: 50%;
+            left: 0;
+            top: 50%;
         }
         &.left.bottom {
             .transform(translate(0, -100%));
-            left: 0; top: 100%;
+            left: 0;
+            top: 100%;
         }
         &.center.top {
             .transform(translate(-50%, 0));
-            left: 50%; top: 0;
+            left: 50%;
+            top: 0;
         }
         &.center.bottom {
             .transform(translate(-50%, -100%));
-            left: 50%; top: 100%;
+            left: 50%;
+            top: 100%;
         }
         &.right.top {
             .transform(translate(-100%, 0));
-            left: 100%; top: 0;
+            left: 100%;
+            top: 0;
         }
         &.right.center {
             .transform(translate(-100%, -50%));
-            left: 100%; top: 50%;
+            left: 100%;
+            top: 50%;
         }
         &.right.bottom {
             .transform(translate(-100%, -100%));
-            left: 100%; top: 100%;
+            left: 100%;
+            top: 100%;
         }
     }
 
@@ -421,7 +434,8 @@ body.emotion--preview {
         .banner--content.right.bottom {
             .transform(translate(0, 0));
             position: relative;
-            left: 0; top: 0;
+            left: 0;
+            top: 0;
             float: none;
         }
 
@@ -440,7 +454,8 @@ body.emotion--preview {
         width: 100%;
         height: 100%;
         position: absolute;
-        top: 0; left: 0;
+        top: 0;
+        left: 0;
         z-index: @zindex-emotion-mapping-link;
     }
 
@@ -449,14 +464,15 @@ body.emotion--preview {
         width: 100%;
         height: 100%;
         position: absolute;
-        top: 0; left: 0;
+        top: 0;
+        left: 0;
     }
 
     .banner--mapping-link {
         position: absolute;
         display: block;
         z-index: @zindex-emotion-mapping-link;
-        background: rgba(0,0,0,0);
+        background: rgba(0, 0, 0, 0);
     }
 }
 
@@ -480,7 +496,8 @@ body.emotion--preview {
         .banner-slider--banner {
             .transform(none);
             position: relative;
-            top: 0; left: 0;
+            top: 0;
+            left: 0;
             width: 100%;
         }
     }
@@ -490,7 +507,8 @@ body.emotion--preview {
         display: block;
         width: 100%;
         position: absolute;
-        top: 0; left: 0;
+        top: 0;
+        left: 0;
         z-index: @zindex-emotion-image-slider-title;
         color: #fff;
         font-weight: 600;
@@ -522,7 +540,8 @@ body.emotion--preview {
         .transform(translate(-50%, -50%));
         display: block;
         position: absolute;
-        top: 50%; left: 50%;
+        top: 50%;
+        left: 50%;
         z-index: 100;
     }
 
@@ -535,7 +554,8 @@ body.emotion--preview {
         height: 100%;
         width: 100%;
         position: absolute;
-        top: 0; left: 0;
+        top: 0;
+        left: 0;
         z-index: 200;
         text-indent: 200%;
         white-space: nowrap;
@@ -560,7 +580,8 @@ body.emotion--preview {
     .product-slider--title {
         .unitize-height(55);
         position: relative;
-        top: 0; left: 0;
+        top: 0;
+        left: 0;
         z-index: @zindex-emotion-product-slider-title;
         white-space: nowrap;
         overflow: hidden;
@@ -572,7 +593,8 @@ body.emotion--preview {
         height: 100%;
         width: 100%;
         position: absolute;
-        top: 0; left: 0;
+        top: 0;
+        left: 0;
         z-index: @zindex-emotion-product-slider-content;
     }
 
@@ -674,7 +696,8 @@ body.emotion--preview {
             max-height: 30%;
             width: 100%;
             position: absolute;
-            bottom: 0; left: 0;
+            bottom: 0;
+            left: 0;
         }
 
         .product--title {
@@ -708,7 +731,8 @@ body.emotion--preview {
         display: block;
         width: 100%;
         position: absolute;
-        bottom: 0; left: 0;
+        bottom: 0;
+        left: 0;
         color: #fff;
         font-weight: 600;
         background: rgba(0, 0, 0, 0.5);
@@ -731,7 +755,8 @@ body.emotion--preview {
     .manufacturer--title {
         .unitize-height(55);
         position: relative;
-        top: 0; left: 0;
+        top: 0;
+        left: 0;
         z-index: @zindex-emotion-product-slider-title;
         white-space: nowrap;
         overflow: hidden;
@@ -743,7 +768,8 @@ body.emotion--preview {
         height: 100%;
         width: 100%;
         position: absolute;
-        top: 0; left: 0;
+        top: 0;
+        left: 0;
         z-index: @zindex-emotion-product-slider-content;
     }
 
@@ -786,8 +812,10 @@ body.emotion--preview {
 
     .manufacturer--image {
         position: absolute;
-        top: 0; bottom: 0;
-        left: 0; right: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
         margin: auto;
     }
 }
@@ -828,7 +856,8 @@ body.emotion--preview {
         height: 100%;
         background: #000;
         position: absolute;
-        top: 0; left: 0;
+        top: 0;
+        left: 0;
         z-index: @zindex-emotion-video-element;
     }
 
@@ -837,7 +866,8 @@ body.emotion--preview {
         width: 100%;
         height: 100%;
         position: absolute;
-        top: 0; left: 0;
+        top: 0;
+        left: 0;
         z-index: @zindex-emotion-video-cover;
         background-position: center center;
         background-size: cover;
@@ -851,8 +881,10 @@ body.emotion--preview {
             .unitize(font-size, 100);
             display: block;
             position: absolute;
-            top: 0; bottom: 0;
-            right: 0; left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
             margin: auto;
             text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
             color: #fff;

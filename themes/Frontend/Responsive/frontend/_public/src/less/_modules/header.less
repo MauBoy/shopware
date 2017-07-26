@@ -215,7 +215,7 @@ More precise designations are commented inside the document.
     }
 
     .main-search--button {
-        .appearance(none);
+        .appearance();
         .unitize(top, 10);
         .unitize(bottom, 10);
         .unitize(right, 10);
@@ -601,7 +601,7 @@ More precise designations are commented inside the document.
         .entry--trigger { display: none; }
 
         .main-search--form {
-            .box-shadow(0 0 0 transparent);
+            box-shadow: none;
             border-bottom: 0 none;
             padding: 0;
             display: inline-block;
@@ -616,11 +616,11 @@ More precise designations are commented inside the document.
 
             // Icon position from here to @desktopViewportWidth
             .main-search--button {
-                .unitize(top, 0);
-                .unitize(bottom, 0);
-                .unitize(right, 0);
                 .unitize-padding(0, 10);
                 .unitize(height, 40);
+                top: 0;
+                bottom: 0;
+                right: 0;
             }
         }
     }
@@ -907,7 +907,7 @@ More precise designations are commented inside the document.
 
         // Search form
         .main-search--form {
-            .box-shadow(0 0 0 transparent);
+            box-shadow: none;
             display: block;
             padding: 0;
             border: 0 none;
